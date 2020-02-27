@@ -1,17 +1,14 @@
-package Service;
+package service;
 
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class MatrixService {
-    private StringService stringService;
-
-    public MatrixService() {
-        stringService = new StringService();
-    }
 
     public String findSequence(String[][] matrix, String word) {
+        StringService stringService = new StringService();
+
         matrixCheck(matrix);
         wordCheck(word);
         word = word.toUpperCase();

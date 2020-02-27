@@ -1,4 +1,4 @@
-package Service;
+package service;
 
 import org.junit.Assert;
 import org.junit.Test;
